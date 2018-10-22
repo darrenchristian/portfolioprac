@@ -1,0 +1,92 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: grey;
+
+}
+main{
+	background-color: lightblue;
+	min-height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+/*	background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/29/70/37583fdf6f4050d.jpg");
+*/	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+nav{
+	position: fixed;
+	z-index: 100;
+}
+.navitem{
+	margin-right: 20px;
+}
+.content{
+	text-align: center;
+}
+
+.ticker h1{
+ 	animation: topToBottom 8s linear infinite 0s;
+	-ms-animation: topToBottom 8s linear infinite 0s;
+	-webkit-animation: topToBottom 8s linear infinite 0s;
+	color: #00abe9;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.ticker h1:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+@-moz-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-50px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(-50px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+#arrow:hover{
+	opacity: 0.5;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.about{
+	background-color: pink;
+	min-height: 100vh;
+	border: solid pink transparent;
+	border-radius: 30px;
+	opacity: 0.3;
+	margin-top: 50px;
+}
+html{
+	scroll-behavior: smooth;
+}

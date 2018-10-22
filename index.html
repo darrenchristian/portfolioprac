@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maxmimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<title>Darren Christian | Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+</head>
+<body>
+	
+	
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="navbarmenu" class="collapse navbar-collapse">
+			<ul class="navbar-nav mx-auto">
+				<li class="navitem">
+					<a href="#" class="nav-link active">Home</a>
+				</li>
+				<li class="navitem">
+					<a href="#" class="nav-link">About</a>
+				</li>
+				<li class="navitem">
+					<a href="#" class="nav-link">Portfolio</a>
+				</li>
+				<li class="navitem">
+					<a href="#" class="nav-link">Resume</a>
+				</li>
+				<li class="navitem">
+					<a href="#" class="nav-link">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<main class="container">
+		<div class="content row">
+			<img src="https://openclipart.org/image/2400px/svg_to_png/277081/Male-Avatar.png" height="150" width="aboutq150">
+			<div class="ticker col offset-2">
+				
+				<h1>Full Stack Web Developer</h1>
+				<h1>Darren Christian Santos</h1>
+				<a href="index.html#about"><img id="arrow" src="https://www.solodev.com/assets/anchor/arrow-down.png" height="50" width="50"></a>
+				
+			</div>
+			<div></div>
+			
+				
+		</div>
+		
+	</main>
+	<div id="about" class="container about">
+		
+	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("sticky")
+		  } else {
+		    navbar.classList.remove("sticky");
+		  }
+		}
+	</script>
+
+
+
+<!-- jquery first then popper then bootstrap.js -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<!-- external bootstrap js -->
+	<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
